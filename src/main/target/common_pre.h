@@ -43,6 +43,7 @@
 #ifdef STM32F3
 #define MINIMAL_CLI
 #define USE_DSHOT
+#define USE_PWM
 #define USE_GYRO_DATA_ANALYSE
 #endif
 
@@ -245,7 +246,7 @@
 #endif
 
 #if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 5))
-#define USE_PWM
+
 #endif
 
 #if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 4))
